@@ -125,7 +125,6 @@ class Checkers:
                         jump_row, jump_col = new_row + dr, new_col + dc
                         if 0 <= jump_row < 8 and 0 <= jump_col < 8 and not self.board[jump_row][jump_col]:
                             valid_moves.append((jump_row, jump_col))
-
         return valid_moves
 
 
@@ -173,4 +172,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     game = Checkers(root)
     root.mainloop()
-
